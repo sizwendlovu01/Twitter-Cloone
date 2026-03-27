@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore / X</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <header class="sidebar-left">
+            <div class="sidebar-content">
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-item logo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.005 3.869H5.078z"></path></g></svg>
+                    </a>
+                    <a href="index.html" class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="explore.html" class="nav-item active">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explore</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bell"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-square-x-twitter"></i>
+                        <span>Grok</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    <a href="#" class="nav-item" id="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Theme</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>Premium</span>
+                    </a>
+                    <a href="profile.html" class="nav-item">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>More</span>
+                    </a>
+                </nav>
+                <button class="post-btn">Post</button>
+            </div>
+            <div class="user-profile-sm">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+                <div class="user-info">
+                    <span class="name">Sizwe X</span>
+                    <span class="handle">@sizwe_x</span>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </header>
+
+        <!-- Main Timeline -> Explore Content -->
+        <main class="timeline-main">
+            <div class="timeline-header" style="padding: 0 16px;">
+                <!-- Reusing Search bar classes from Sidebar for styling -->
+                <div class="search-bar" style="margin: 8px 0; width: 100%;">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active">
+                    <span>For you</span>
+                    <div class="active-indicator"></div>
+                </div>
+                <div class="tab"><span>Trending</span></div>
+                <div class="tab"><span>News</span></div>
+                <div class="tab"><span>Sports</span></div>
+                <div class="tab"><span>Entertainment</span></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="explore-hero" style="position: relative; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=800&auto=format&fit=crop" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                <div style="position: absolute; bottom: 0; padding: 16px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); width: 100%;">
+                    <span style="color: #fff; font-size: 13px;">Photography · LIVE</span>
+                    <h2 style="color: #fff; margin-top: 4px; font-size: 22px;">Capture the moment in 2024</h2>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="trending-feed">
+                <!-- Trending item 1 -->
+                <div class="trending-item" style="padding: 12px 16px;">
+                    <div class="item-header">
+                        <span>Trending in South Africa</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#AIRevolution</div>
+                    <div class="item-stats">85.2K posts</div>
+                </div>
+                <!-- Trending item 2 -->
+                <div class="trending-item" style="padding: 12px 16px;">
+                    <div class="item-header">
+                        <span>Technology · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#WebDev</div>
+                    <div class="item-stats">12.3K posts</div>
+                </div>
+                <!-- Trending item 3 -->
+                <div class="trending-item" style="padding: 12px 16px;">
+                    <div class="item-header">
+                        <span>Sports · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#UCLFinal</div>
+                    <div class="item-stats">354K posts</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Same as index) -->
+        <aside class="sidebar-right">
+            <div class="sidebar-card who-to-follow">
+                <h2>Who to follow</h2>
+                <!-- follow items -->
+                <div class="follow-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 12px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 700;">Elon Musk</span>
+                            <span style="color: var(--text-dim); font-size: 14px;">@elonmusk</span>
+                        </div>
+                    </div>
+                    <button style="background: white; color: black; border: none; border-radius: 9999px; padding: 6px 16px; font-weight: 700; cursor: pointer;">Follow</button>
+                </div>
+                <div class="follow-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 12px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 700;">MKBHD</span>
+                            <span style="color: var(--text-dim); font-size: 14px;">@MKBHD</span>
+                        </div>
+                    </div>
+                    <button style="background: white; color: black; border: none; border-radius: 9999px; padding: 6px 16px; font-weight: 700; cursor: pointer;">Follow</button>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ···</a>
+                <span>© 2024 X Corp.</span>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i></a>
+        <a href="explore.html" class="nav-item active"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-bell"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+
+    <!-- Tweet Modal -->
+    <div class="modal-overlay" id="tweet-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-close" id="close-modal"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="modal-body">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+                <div class="modal-composer">
+                    <textarea placeholder="What is happening?!"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <i class="fa-regular fa-image"></i>
+                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <i class="fa-solid fa-location-dot" style="opacity: 0.5;"></i>
+                </div>
+                <button class="modal-post-btn">Post</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

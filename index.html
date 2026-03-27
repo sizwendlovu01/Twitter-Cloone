@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X / Twitter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using FontAwesome for basic icons as placeholders until we get custom SVGs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <header class="sidebar-left">
+            <div class="sidebar-content">
+                <nav class="nav-links">
+                    <a href="#" class="nav-item logo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.005 3.869H5.078z"></path></g></svg>
+                    </a>
+                    <a href="#" class="nav-item active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="explore.html" class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explore</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bell"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-square-x-twitter"></i>
+                        <span>Grok</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    <a href="#" class="nav-item" id="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Theme</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>Premium</span>
+                    </a>
+                    <a href="profile.html" class="nav-item">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>More</span>
+                    </a>
+                </nav>
+                <button class="post-btn">Post</button>
+            </div>
+            <div class="user-profile-sm">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+                <div class="user-info">
+                    <span class="name">Sizwe X</span>
+                    <span class="handle">@sizwe_x</span>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </header>
+
+        <!-- Main Timeline -->
+        <main class="timeline-main">
+            <div class="timeline-header">
+                <div class="tabs">
+                    <div class="tab active">
+                        <span>For you</span>
+                        <div class="active-indicator"></div>
+                    </div>
+                    <div class="tab">
+                        <span>Following</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet-composer">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+                <div class="composer-content">
+                    <input type="text" placeholder="What is happening?!">
+                    <div class="composer-actions">
+                        <div class="action-icons">
+                            <i class="fa-regular fa-image" style="color: var(--primary-color);"></i>
+                            <i class="fa-solid fa-gift" style="color: var(--primary-color);"></i>
+                            <i class="fa-solid fa-list-ul" style="color: var(--primary-color);"></i>
+                            <i class="fa-regular fa-face-smile" style="color: var(--primary-color);"></i>
+                            <i class="fa-regular fa-calendar-days" style="color: var(--primary-color);"></i>
+                            <i class="fa-solid fa-location-dot" style="color: var(--primary-color); opacity: 0.5;"></i>
+                        </div>
+                        <button class="post-btn small" disabled>Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="feed">
+                <article class="tweet">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="tweet-avatar">
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <span class="tweet-name">Naruto Uzumaki</span>
+                            <span class="tweet-handle">@hokage_dattebayo</span>
+                            <span class="tweet-time">· 2h</span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tweet-text">
+                            Just learned a new jutsu! Training never stops! 🦊🍥
+                        </div>
+                        <div class="tweet-media">
+                            <img src="https://images.unsplash.com/photo-1615554851479-5b651bf2ebcd?q=80&w=800&auto=format&fit=crop" alt="Training" class="media-img">
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="action reply"><i class="fa-regular fa-comment"></i> <span>142</span></div>
+                            <div class="action repost"><i class="fa-solid fa-retweet"></i> <span>45</span></div>
+                            <div class="action like"><i class="fa-regular fa-heart"></i> <span>2.1K</span></div>
+                            <div class="action view"><i class="fa-solid fa-chart-simple"></i> <span>150K</span></div>
+                            <div class="action share"><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket" style="margin-left:8px;"></i></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tweet">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="Avatar" class="tweet-avatar">
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <span class="tweet-name">Tech News</span>
+                            <span class="tweet-handle">@technews_daily</span>
+                            <span class="tweet-time">· 5h</span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tweet-text">
+                            The future of AI is moving faster than ever. What do you think will be the biggest breakthrough this year? 🚀🤖 #Tech #AI
+                        </div>
+                        <div class="tweet-actions">
+                            <div class="action reply"><i class="fa-regular fa-comment"></i> <span>891</span></div>
+                            <div class="action repost"><i class="fa-solid fa-retweet"></i> <span>3.4K</span></div>
+                            <div class="action like"><i class="fa-regular fa-heart"></i> <span>12K</span></div>
+                            <div class="action view"><i class="fa-solid fa-chart-simple"></i> <span>1.2M</span></div>
+                            <div class="action share"><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket" style="margin-left:8px;"></i></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="sidebar-card premium-promo">
+                <h2>Subscribe to Premium</h2>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="sidebar-card trending">
+                <h2>What's happening</h2>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Sports · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#UCL</div>
+                    <div class="item-stats">125K posts</div>
+                </div>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Technology · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#AIRevolution</div>
+                    <div class="item-stats">85.2K posts</div>
+                </div>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Entertainment · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#StarWarsFan</div>
+                    <div class="item-stats">25.4K posts</div>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+
+            <div class="sidebar-card who-to-follow">
+                <h2>Who to follow</h2>
+                <div class="follow-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 12px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 700;">Elon Musk</span>
+                            <span style="color: var(--text-dim); font-size: 14px;">@elonmusk</span>
+                        </div>
+                    </div>
+                    <button style="background: white; color: black; border: none; border-radius: 9999px; padding: 6px 16px; font-weight: 700; cursor: pointer;">Follow</button>
+                </div>
+                <div class="follow-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; cursor: pointer;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 12px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 700;">MKBHD</span>
+                            <span style="color: var(--text-dim); font-size: 14px;">@MKBHD</span>
+                        </div>
+                    </div>
+                    <button style="background: white; color: black; border: none; border-radius: 9999px; padding: 6px 16px; font-weight: 700; cursor: pointer;">Follow</button>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ···</a>
+                <span>© 2024 X Corp.</span>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active"><i class="fa-solid fa-house"></i></a>
+        <a href="explore.html" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-bell"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+
+    <!-- Tweet Modal -->
+    <div class="modal-overlay" id="tweet-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-close" id="close-modal"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="modal-body">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Profile" class="avatar">
+                <div class="modal-composer">
+                    <textarea placeholder="What is happening?!"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <i class="fa-regular fa-image"></i>
+                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <i class="fa-solid fa-location-dot" style="opacity: 0.5;"></i>
+                </div>
+                <button class="modal-post-btn">Post</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

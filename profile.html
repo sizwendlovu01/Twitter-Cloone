@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizwe Ndlovu (@NdlovuSizw24364) / X</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <header class="sidebar-left">
+            <div class="sidebar-content">
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-item logo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.005 3.869H5.078z"></path></g></svg>
+                    </a>
+                    <a href="index.html" class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="explore.html" class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Explore</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bell"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-square-x-twitter"></i>
+                        <span>Grok</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    <a href="#" class="nav-item" id="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Theme</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>Premium</span>
+                    </a>
+                    <a href="profile.html" class="nav-item active">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span>More</span>
+                    </a>
+                </nav>
+                <button class="post-btn">Post</button>
+            </div>
+            <div class="user-profile-sm">
+                <div class="avatar text-avatar" style="background-color: #6a4c41;">S</div>
+                <div class="user-info">
+                    <span class="name">Sizwe Ndlovu</span>
+                    <span class="handle">@NdlovuSizw24364</span>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </header>
+
+        <!-- Main Timeline -> Profile View -->
+        <main class="timeline-main profile-main">
+            <div class="profile-header-top">
+                <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="header-text">
+                    <h2>Sizwe Ndlovu</h2>
+                    <span class="post-count">0 posts</span>
+                </div>
+            </div>
+
+            <div class="profile-banner"></div>
+            
+            <div class="profile-details">
+                <div class="profile-actions">
+                    <div class="avatar-large text-avatar">S</div>
+                    <button class="edit-profile-btn">Edit profile</button>
+                </div>
+
+                <div class="profile-info">
+                    <h2 class="profile-name">Sizwe Ndlovu</h2>
+                    <span class="profile-handle">@NdlovuSizw24364</span>
+                    
+                    <div class="profile-meta">
+                        <i class="fa-regular fa-calendar-days"></i> Joined May 2024
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <a href="#"><strong>0</strong> Following</a>
+                        <a href="#"><strong>0</strong> Followers</a>
+                    </div>
+                </div>
+
+                <!-- Green Verification Promopt -->
+                <div class="verification-prompt">
+                    <div class="prompt-header">
+                        <h3>You aren't verified yet <i class="fa-solid fa-circle-check"></i></h3>
+                        <i class="fa-solid fa-xmark close-btn"></i>
+                    </div>
+                    <p>Get verified for boosted replies, analytics, ad-free browsing, and more. Upgrade your profile now.</p>
+                    <button class="get-verified-btn">Get verified</button>
+                </div>
+            </div>
+
+            <div class="profile-tabs tabs">
+                <div class="tab active">
+                    <span>Posts</span>
+                    <div class="active-indicator"></div>
+                </div>
+                <div class="tab"><span>Replies</span></div>
+                <div class="tab"><span>Highlights</span></div>
+                <div class="tab"><span>Articles</span></div>
+                <div class="tab"><span>Media</span></div>
+                <div class="tab"><span>Likes</span></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="profile-feed">
+                <!-- Who to follow embedded inside profile feed as per image -->
+                <div class="who-to-follow-feed">
+                    <h2 class="feed-title">Who to follow</h2>
+                    
+                    <div class="follow-item d-flex">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Avatar">
+                        <div class="follow-info">
+                            <div class="follow-name-row">
+                                <span class="fw-bold">Black Coffee <i class="fa-solid fa-circle-check text-blue"></i></span>
+                                <button class="follow-btn">Follow</button>
+                            </div>
+                            <span class="text-dim">@RealBlackCoffee</span>
+                            <p class="follow-bio">Grammy Award winning Artist. Booking Inquiries: bookings@realblackcoffee.net</p>
+                        </div>
+                    </div>
+                    
+                    <div class="follow-item d-flex">
+                        <img src="https://i.pravatar.cc/150?img=60" alt="Avatar">
+                        <div class="follow-info">
+                            <div class="follow-name-row">
+                                <span class="fw-bold">Sizwe Dhlomo <i class="fa-solid fa-circle-check text-blue"></i></span>
+                                <button class="follow-btn">Follow</button>
+                            </div>
+                            <span class="text-dim">@SizweDhlomo</span>
+                            <p class="follow-bio">It all happens at its own pace, that's the beauty of it...</p>
+                        </div>
+                    </div>
+
+                    <div class="follow-item d-flex">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Avatar">
+                        <div class="follow-info">
+                            <div class="follow-name-row">
+                                <span class="fw-bold">Don Billiato <i class="fa-solid fa-circle-check text-blue"></i></span>
+                                <button class="follow-btn">Follow</button>
+                            </div>
+                            <span class="text-dim">@casspernyovest</span>
+                            <p class="follow-bio">•Child of God •Artist of the Decade •Family Tree Ceo •Multiple Mtv Award winner • 2x Bet Nominee • Marketing Guru • Living Legend •Bookings:nyovest@gmail.com</p>
+                        </div>
+                    </div>
+                    <a href="#" class="show-more">Show more</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="sidebar-card you-might-like">
+                <h2>You might like</h2>
+                <div class="follow-item short d-flex align-center just-space">
+                    <div class="d-flex align-center">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Avatar" class="avatar">
+                        <div class="d-flex col ml-12">
+                            <span class="fw-bold">Koshiek Karan <i class="fa-solid fa-circle-check text-blue"></i></span>
+                            <span class="text-dim fs-14">@iamkoshiek</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item short d-flex align-center just-space">
+                    <div class="d-flex align-center">
+                        <img src="https://i.pravatar.cc/150?img=59" alt="Avatar" class="avatar">
+                        <div class="d-flex col ml-12">
+                            <span class="fw-bold">Africa Research Desk <i class="fa-solid fa-circle-check text-blue"></i></span>
+                            <span class="text-dim fs-14">@MightiJamie</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-item short d-flex align-center just-space">
+                    <div class="d-flex align-center">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="avatar">
+                        <div class="d-flex col ml-12">
+                            <span class="fw-bold">Gayton McKenzie <i class="fa-solid fa-circle-check text-blue"></i></span>
+                            <span class="text-dim fs-14">@GaytonMcK</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+
+            <div class="sidebar-card trending">
+                <h2>What's happening</h2>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Entertainment · Trending</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#PodcastAndChill</div>
+                </div>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Trending in South Africa</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#LiemaPantsi</div>
+                </div>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Trending in South Africa</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#AndreaJohnson</div>
+                </div>
+                <div class="trending-item">
+                    <div class="item-header">
+                        <span>Trending in South Africa</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="item-title">#EngineerYourLifeWithThandeka</div>
+                </div>
+                <a href="#" class="show-more">Show more</a>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Ads info</a>
+                <a href="#">More ···</a>
+                <span>© 2024 X Corp.</span>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i></a>
+        <a href="explore.html" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-bell"></i></a>
+        <a href="#" class="nav-item"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+
+    <!-- Tweet Modal -->
+    <div class="modal-overlay" id="tweet-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-close" id="close-modal"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="modal-body">
+                <div class="avatar text-avatar" style="background-color: #6a4c41;">S</div>
+                <div class="modal-composer">
+                    <textarea placeholder="What is happening?!"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <i class="fa-regular fa-image"></i>
+                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <i class="fa-solid fa-location-dot" style="opacity: 0.5;"></i>
+                </div>
+                <button class="modal-post-btn">Post</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
